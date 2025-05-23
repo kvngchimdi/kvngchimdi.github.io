@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porky Porky - Premium Pork Dishes</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
 </head>
 <body>
     <header>
         <nav>
+           
             <div class="nav-center">
                 <img src="porky1.PNG" alt="Porky Porky Logo" class="nav-logo">
             </div>
@@ -25,6 +25,7 @@
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
+            <!-- Cart Icon -->
             <div class="cart-icon-container">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="cart-count-badge" id="cart-count">0</span>
@@ -34,7 +35,7 @@
 
     <section id="home" class="hero">
         <video class="hero-bg-video" autoplay loop muted playsinline>
-            <source src="vid.mp4" type="video/mp4">
+            <source src="vid.mov" type="video/quicktime">
             Your browser does not support the video tag.
         </video>
         <div class="hero-content">
@@ -61,7 +62,7 @@
                 <h2>Your Order</h2>
                 <div id="cart-items-list"></div>
                 <div class="cart-modal-total">
-                    <span>Total:</span> <span id="cart-total">rs 0.00</span>
+                    <span>Total:</span> <span id="cart-total">$0.00</span>
                 </div>
                 <button id="cart-checkout-btn" class="cart-checkout-btn">Checkout via WhatsApp</button>
                 <button id="continue-ordering-btn" class="continue-ordering-btn">Continue Ordering</button>
@@ -201,7 +202,7 @@
         <p>© 2024 Porky Porky. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 </html>
