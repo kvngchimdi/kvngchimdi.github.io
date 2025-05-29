@@ -3,206 +3,714 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porky Porky - Premium Pork Dishes</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Hich Lounge</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Great+Vibes&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-           
-            <div class="nav-center">
-                <img src="porky1.PNG" alt="Porky Porky Logo" class="nav-logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <!-- Cart Icon -->
-            <div class="cart-icon-container">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count-badge" id="cart-count">0</span>
-            </div>
-        </nav>
-    </header>
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-left">
+            <a href="#home">Home</a>
+        </div>
+        <div class="nav-center">
+            <img src="/IMG/logohh.jpg" alt="Maravann Burgers Logo" class="logo-image">
+        </div>
+        <div class="nav-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#location">Location</a>
+        <a href="#" class="cta-btn reserve-trigger">reservation</a>
+       
+    </div>
+    <div class="cart-icon">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-count">0</span>
+    </div>
+        <div class="nav-right">
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#location">Location</a>
+            <a href="#" class="cta-btn reserve-trigger">Resersation</a>
+        </div>
+    </nav>
 
-    <section id="home" class="hero">
-        <video class="hero-bg-video" autoplay loop muted playsinline>
-            <source src="vid.mov" type="video/quicktime">
-            Your browser does not support the video tag.
-        </video>
-        <div class="hero-content">
-            <h2>Welcome to Porky Porky</h2>
-            <p>Experience the finest pork dishes in town</p>
-            <a href="#menu" class="cta-button">View Menu</a>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="video-container">
+            <video id="hero-video" playsinline muted preload="auto" autoplay loop>
+                <source src="/IMG/vds.mp4" type="video/mp4">
+            </video>
         </div>
-    </section>
-
-    <section id="menu" class="menu-section">
-        <div class="pig-animation">
-            <i class="fas fa-piggy-bank"></i>
-        </div>
-        <h2>Our Menu</h2>
-        <div class="menu-tabs">
-            <!-- Tab buttons will be generated here -->
-        </div>
-        <div class="menu-content">
-            <!-- Category content will be generated here -->
-        </div>
-        <div id="cart-modal" class="cart-modal">
-            <div class="cart-modal-content">
-                <span class="cart-modal-close" id="cart-modal-close">×</span>
-                <h2>Your Order</h2>
-                <div id="cart-items-list"></div>
-                <div class="cart-modal-total">
-                    <span>Total:</span> <span id="cart-total">$0.00</span>
+        <div class="content-container">
+            <div class="text-wrapper">
+                <div class="text-content active">
+                    <h1>Mouth watering classics</h1>
+                    <p>Juicy patties, artisan buns, bold toppings.</p>
+                    <div class="hero-cta">
+                        <a href="#menu" class="cta-btn">Order Now</a>
+                    </div>
                 </div>
-                <button id="cart-checkout-btn" class="cart-checkout-btn">Checkout via WhatsApp</button>
-                <button id="continue-ordering-btn" class="continue-ordering-btn">Continue Ordering</button>
+                <div class="text-content">
+                    <h1>Artisanal Burger Creations</h1>
+                    <p>Family recipes, crafted with love.</p>
+                    <div class="hero-cta">
+                        <a href="#menu" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h1>Where Quality Meets Taste</h1>
+                    <p>Locally sourced, premium ingredients.</p>
+                    <div class="hero-cta">
+                        <a href="#menu" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+        
+    </div>
 
-    <section id="about" class="about-section">
-        <div class="about-animation">
-            <div class="animation-circle"></div>
-            <div class="animation-circle"></div>
-            <div class="animation-circle"></div>
-        </div>
-        <h2>About Us</h2>
+    <section class="best-burgers-section"><div class="best-burgers-container"><h2 class="best-burgers-heading"><span class="typed-text scrolling">Mauritius best burgers</span><span class="cursor">|</span></h2></div></section>
+
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <br>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="about-heading">About Us</h2>
         <div class="about-content">
-            <p>At Porky Porky, we're passionate about serving the finest pork dishes. Our commitment to quality and taste sets us apart in the fast-food industry. We source only the highest quality pork from local farms, ensuring that every bite is packed with flavor and freshness.</p>
-            <p>Our journey began with a simple mission: to revolutionize the way people experience pork dishes. Today, we're proud to serve our community with innovative recipes that combine traditional cooking methods with modern culinary techniques. Our chefs are dedicated to creating memorable dining experiences, one delicious dish at a time.</p>
-            <figure class="owner-figure">
-                <img src="owb.jpg" alt="Owner of Porky Porky" class="owner-photo">
-                <figcaption>Our Founder</figcaption>
-            </figure>
-            <div class="about-stats">
-                <div class="stat-item">
-                    <span class="stat-number">10+</span>
-                    <span class="stat-label">Years of Excellence</span>
+            <div class="about-text">
+                <div class="story-section">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2020, Maravann Burgers started as a small food truck passionate about crafting perfect burgers. Our secret recipes and premium ingredients quickly made us a local favorite. Today, we continue to serve mouthwatering burgers with the same love and dedication.</p>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">1000+</span>
-                    <span class="stat-label">Happy Customers Daily</span>
+                <div class="journey-section">
+                    <h3>The Owner's Journey</h3>
+                    <p>The owner's dream begins with to create unforgettable burger experiences. Starting from humble beginnings, he has poured his heart into mastering the art of burger crafting, transforming his restaurant into a beloved location in the heart of Mauritius.</p>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Signature Dishes</span>
+            </div>
+            <div class="owner-image-container">
+                <div class="burger-wrapper">
+                    <i class="fa-solid fa-bowl-food"></i>
+                </div>
+            </div>
+            <div class="owner-image-section">
+                <h3>Meet the Owner</h3>
+                <img src="IMG/hichown.png" alt="Owner of Maravann Burgers" class="owner-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <!-- Replace your current menu section with this implementation -->
+<section class="menu-section" id="menu">
+    <h2>Order Our Top Burgers</h2>
+    <p class="intro">Click On Our Burgers To Order Now</p>
+    <div class="cards-container" id="menu-cards-container">
+        <!-- Menu cards with proper data attributes for ingredients -->
+        <div class="menu-card" data-id="1" data-ingredients="beef patty, sesame bun, melted cheese, caramelized onions, pima kari, chili Thai">
+            <div class="card-content">
+                <img src="/IMG/def.PNG" alt="Pima Kari Burger" />
+                <h3>FESENJOON</h3>
+                <p class="description">Savor our exquisite Fesenjoon, a Persian masterpiece featuring tender chicken simmered in a rich, velvety peanut and pomegranate sauce. This sweet-tangy delight, bursting with nutty warmth and vibrant flavor, is served over fluffy rice for a truly unforgettable meal.</p>
+                <p class="price">350Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            
+            <!-- Customization Panel (initially hidden) -->
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Burger</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <!-- New Add-Ons Section -->
+                    <div class="add-ons-section">
+                        <h4>Add-Ons</h4>
+                        <div class="add-ons-list"></div>
+                    </div>
+                    <div class="cooking-level-section" style="display: none;">
+                        <h4>Cooking Level</h4>
+                        <div class="cooking-level-options"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-card" data-id="2" data-ingredients="beef patty, brioche bun, truffle sauce, salad, caramelized pineapple, sun dried tomato, blueberry & raspberry brochette">
+            <div class="card-content">
+                <img src="/IMG/gg.PNG" alt="La Belle Demoiselle Burger" />
+                <h3>PPANCAKES </h3>
+                <p class="description">Her sight will mesmerise you and her taste will be dancing on your tastebuds. Each bite is a perfect blend of melt-in-your-mouth goodness, drizzled with sweet maple syrup and topped with your favorite fruits or creamy butter. Treat yourself to a stack of pure comfort—your taste buds will thank you!</p>
+                <p class="price">300Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <!-- Customization Panel (initially hidden) -->
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Burger</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <div class="cooking-level-section" >
+                        <h4>Cooking Level</h4>
+                        <div class="cooking-level-options"></div>
+                    </div>
+                    <!-- New Add-Ons Section -->
+                    <div class="add-ons-section">
+                        <h4>Add-Ons</h4>
+                        <div class="add-ons-list"></div>
+                    </div>
+
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-card" data-id="3" data-ingredients="plant-based patty, whole grain bun, beetroot, almonds, avocado spread, fresh sprouts, vegan mayo">
+            <div class="card-content">
+            <img src="/IMG/luckkk.png" alt="Unconventional Vegan Burger" />
+            <h3>ZERESHK POLO</h3>A unique blend of flavors in your Delight, even 
+            <p class="description">A unique blend of flavors in your Delight,  Chicken with rice and barberries
+FR: Poulet au riz et aux barberries
+</p>
+            <p class="price">470Rs</p>
+            <button class="customize-btn">Customize</button>
+            </div>
+            
+            <!-- Customization Panel (initially hidden) -->
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Burger</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <!-- New Add-Ons Section -->
+                    <div class="add-ons-section">
+                        <h4>Add-Ons</h4>
+                        <div class="add-ons-list"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional menu items (hidden initially) -->
+         
+        <div class="menu-card additional-item" data-id="4" data-ingredients="double beef patty, charcoal bun, red cheddar, crispy bacon, jalapeños, spicy heart sauce">
+            <div class="card-content">
+                <img src="/IMG/weee.PNG" alt="The Broken Heart Burger" />
+                <h3>Hummus & LAVASH</h3>
+                <p class="description">Love gone wrong never tasted so right. A juicy patty dressed to impress with a symphony of
+                    flavors that'll have your tastebuds doing the tango. Served with a side of crispy fries, this burger might break
+                    your heart... but in a good way.</p>
+                <p class="price">410Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            
+            <!-- Customization Panel (initially hidden) -->
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Burger</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <!-- New Add-Ons Section -->
+                    <div class="add-ons-section">
+                        <h4>Add-Ons</h4>
+                        <div class="add-ons-list"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-card additional-item" data-id="5" data-ingredients="double beef patty, brioche bun, double cheese, honey caramelized onions, fried egg, crisp lettuce, special sauce">
+            <div class="card-content">
+                <img src="/IMG/tryy.png" alt="Pieter Both Burger" />
+                <h3>CHENGEH KEBAB</h3>
+                <p class="description">This one is for the big eaters,a marinated lamb sirloin, comes with rice
+FR: filet d'agneau mariné, accompagné de riz
+leave you breathless when you're done!</p>
+                <p class="price">550Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            
+            <!-- Customization Panel (initially hidden) -->
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Burger</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <!-- New Add-Ons Section -->
+                    <div class="add-ons-section">
+                        <h4>Add-Ons</h4>
+                        <div class="add-ons-list"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-card additional-item" data-id="6" data-ingredients="double beef patty, triple-layer bun, american cheese, iceberg lettuce, dill pickles, diced onions, special sauce">
+            <div class="card-content">       
+            <img src="/IMG/oizza.jpg" alt="Double Decker Burger" />
+            <h3>PEPPERONI</h3>
+            <p class="description">Made with tomato sauce, mozzarella, pepperoni, oregano
+FR: tomate, mozzarella, pepperoni, origan
+</p>
+            <p class="price">400Rs</p>
+            <button class="customize-btn">Customize</button>
+            </div>
+            
+            <!-- Customization Panel (initially hidden) -->
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Burger</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <!-- New Add-Ons Section -->
+                    <div class="add-ons-section">
+                        <h4>Add-Ons</h4>
+                        <div class="add-ons-list"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Order notification toast -->
+    <div id="order-notification" class="order-notification">
+        Item added to your order!
+    </div>
+    
+    <button class="cta" id="explore-more">Explore More</button>
+</section>
+        
+        
+    </section>
+    <section class="order-summary-section" id="order-summary">
+        <div class="order-summary-container">
+          <h2>Your Order</h2>
+          <p class="order-intro">Review your selected items below</p>
+          
+          <div class="order-summary-content">
+            <!-- This will be populated with JavaScript -->
+            <div class="empty-order-message">
+              <i class="fas fa-shopping-cart"></i>
+              <p>Your order is empty. Click on menu items to add them to your cart.</p>
+            </div>
+          </div>
+          
+          <div class="order-summary-actions">
+            <button id="clear-order-btn" class="action-btn clear-btn">
+              <i class="fas fa-trash"></i> Clear Order
+            </button>
+            <button id="checkout-order-btn" class="action-btn checkout-btn">
+              <i class="fas fa-check"></i> Checkout
+              <div class="button-flag-indicator"></div>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Order Summary Modal -->
+        <div id="order-modal" class="order-modal">
+          <div class="order-modal-content">
+            <div class="chat-header">
+              <div class="chat-header-flag">
+                <div class="flag-stripe-mini red"></div>
+                <div class="flag-stripe-mini blue"></div>
+                <div class="flag-stripe-mini yellow"></div>
+                <div class="flag-stripe-mini green"></div>
+              </div>
+              <h3>Order Summary</h3>
+              <button class="close-modal">&times;</button>
+            </div>
+            
+            <div class="modal-body">
+              <div class="final-order-summary">
+                <div class="summary-header">
+                  <i class="fas fa-check-circle"></i> Order Summary
+                </div>
+                <div id="modal-order-items">
+                  <!-- Will be populated with JavaScript -->
+                </div>
+                <div class="summary-total">
+                  <span>Total:</span> <span id="modal-order-total">0Rs</span>
+                </div>
+                <div class="summary-flag">
+                  <div class="mini-flag-stripe red"></div>
+                  <div class="mini-flag-stripe blue"></div>
+                  <div class="mini-flag-stripe yellow"></div>
+                  <div class="mini-flag-stripe green"></div>
+                </div>
+              </div>
+              
+              <div class="delivery-options">
+                <h4>Delivery Options</h4>
+                <div class="option-selector">
+                  <label class="option-label">
+                    <input type="radio" name="delivery-option" value="delivery" checked>
+                    <span class="option-text">Delivery</span>
+                  </label>
+                  <label class="option-label">
+                    <input type="radio" name="delivery-option" value="pickup">
+                    <span class="option-text">Pickup</span>
+                  </label>
+                </div>
+              </div>
+              
+              <button id="complete-order-btn" class="complete-order-btn">
+                <i class="fab fa-whatsapp"></i> Complete Order on WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Location Section -->
+    <section class="find-us" id="location">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.552222551494!2d57.48726131538991!3d-20.20039748646709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c5b3d35e79a1d%3A0x7321a80b7b6d3723!2sFlic%20en%20Flac%2C%20Mauritius!5e0!3m2!1sen!2sus!4v1623334257897!5m2!1sen!2sus" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Our Location" aria-label="Interactive map showing our location"></iframe>
+        </div>
+        <div class="contact-info">
+            <h2 class="section-heading">Find Us</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Hich Lounge' Jacques Morcellement, B1, St, Flic en Flac<br>Mauritius, MU 10001</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+23058461041">+ (230) 5507 5552</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:hello@Hichlounge.com">hello@Hichlounge.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Hours</h3>
+                        <p>Mon-Sun: 11AM - 11PM<br>Holidays: 12PM - 9PM</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <div class="contact-container">
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2155710122!2d-73.987844924187!3d40.757988971389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+    <section class="reviews-section" id="reviews">
+        <h2>What People Are Saying on</h2>
+        <img src="/IMG/google.png" alt="Google" class="google-logo">
+        <div class="rating-summary">
+            <div class="stars">★★★★★</div>
+            <div class="average-rating">4.8 (126 reviews)</div>
+        </div>
+        <div class="review-slider">
+            <div class="review-card" data-index="0">
+                <div class="reviewer-info"></div>
+                <div class="profile-icon"></div>
+                <h3 class="reviewer-name">
+Cindy van Rensburg</h3>
+                <div class="rating">★★★★★</div>
+                <div class="review-date">1 month ago</div>
+                <p class="review-text">"Great and upbeat atmosphere. The food tasted absolutely amazing. Definitely the best burger I have had in Mauritius so far. Their pancakes are out of this word as well as their eggplant starter. Inside play area for small kids."</p>
+                <div class="interaction-options">
+                    <button class="helpful-btn flag-btn flag-fill flag-border flag-corner"><i class="fas fa-thumbs-up"></i> Helpful</button>
+                    <button class="share-btn flag-btn flag-fill flag-border flag-corner"><i class="fas fa-share"></i> Share</button>
+                </div>
             </div>
-            <div class="contact-info-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="contact-text">
-                            <h3>Address</h3>
-                            <p> Coastal Road, Flic en Flac</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div class="contact-text">
-                            <h3>Phone</h3>
-                            <p>(555) 123-4567</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div class="contact-text">
-                            <h3>Email</h3>
-                            <p>info@porkyporky.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div class="contact-text">
-                            <h3>Opening Hours</h3>
-                            <p>Mon-Sun: 10:00 AM - 10:00 PM</p>
-                        </div>
-                    </div>
+            <div class="review-card" data-index="1">
+                <div class="profile-icon"></div>
+                <h3 class="reviewer-name">Sorin Ion</h3>
+                <div class="rating">★★★★★</div>
+                <div class="review-date">3 weeks ago</div>
+                <p class="review-text">"Very nice place for a drink and a shisha.
+You can also eat here. The desserts are great.
+On Friday there is a band playing live music.
+I recommend it for a relaxing evening."</p>
+                <div class="interaction-options">
+                    <button class="helpful-btn flag-btn flag-fill flag-border flag-corner"><i class="fas fa-thumbs-up"></i> Helpful</button>
+                    <button class="share-btn flag-btn flag-fill flag-border flag-corner"><i class="fas fa-share"></i> Share</button>
+                </div>
+            </div>
+            <div class="review-card" data-index="2">
+                <div class="profile-icon"></div>
+                <h3 class="reviewer-name">Ario</h3>
+                <div class="rating">★★★★★</div>
+                <div class="review-date">1 month ago</div>
+                <p class="review-text">"A very relaxed restaurant/lounge bar with good selection of freshly prepared local, international & Persian food on the menu.
+Great warm & friendly service."</p>
+                <div class="interaction-options">
+                    <button class="helpful-btn flag-btn flag-fill flag-border flag-corner"><i class="fas fa-thumbs-up"></i> Helpful</button>
+                    <button class="share-btn flag-btn flag-fill flag-border flag-corner"><i class="fas fa-share"></i> Share</button>
                 </div>
             </div>
         </div>
+        <div class="pagination-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <a href="https://www.google.com/search?sca_esv=f9f1a50abb3c6f24&rlz=1C1ONGR_enMU1088MU1088&sxsrf=AHTn8zqDPQLmv3iAOOKL_NR8w2ylbIUQbA:1744744153378&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzePVp-RgIPpm3-w_9TgR-o31WdP5XGaA4jqIOVvzjHJnaSZWXkLfpKF-cH7GA2fBSELJPx6Qf_D_404c99_AYKx2fNQzGi_QIBn8OrbksruKQtfuow%3D%3D&q=Maravann%27+Burgers+Reviews&sa=X&ved=2ahUKEwi-r_G73tqMAxVKA9sEHeBEFJcQ0bkNegQISxAD&biw=1600&bih=739&dpr=1#" class="write-review-btn"><span class="flag-border-effect"></span>
+            <span class="flag-bg-red"></span>
+            Write a Review</a>
     </section>
+   
+<!-- Reservation Modal -->
+<div id="reservation-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Reserve a Table</h2>
+        <form id="reservation-form">
+            <label for="res-date">Date:</label>
+            <input type="date" id="res-date" required>
+            <label for="res-time">Time:</label>
+            <input type="time" id="res-time" required>
+            <label for="party-size">Number of Guests:</label>
+            <input type="number" id="party-size" min="1" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</div>
 
-    <section class="customer-reviews-section">
-        <h2 class="customer-reviews-title">What Our Customers Say</h2>
-        <p class="customer-reviews-subtitle">Don't just take our word for it</p>
-        <div class="customer-reviews-cards">
-            <div class="review-card">
-                <div class="review-stars">
-                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+    <!-- Review Form -->
+    <div class="review-form-container">
+        <div class="review-form-wrapper">
+            <h3 class="form-title">Share Your Hichlounge Experience</h3>
+            <form class="pizza-review-form" id="reviewForm">
+                <div class="form-group">
+                    <label class="form-label">Your Rating</label>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" class="star">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" class="star">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" class="star">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" class="star">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" class="star">★</label>
+                    </div>
                 </div>
-                <blockquote>
-                    "The Bazouka Burger is absolutely amazing! Juicy, flavorful, and perfectly cooked. This place is a hidden gem in Flic en Flac!"
-                </blockquote>
-                <div class="reviewer">- <span>Sarah T.</span></div>
+                <div class="form-group">
+                    <textarea class="pizza-input" placeholder="Tell us about your Hichlounge experience..." rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="pizza-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <button class="flag-btn flag-fill flag-border flag-corner">
+                        <!-- Flag background layers -->
+                        <span class="flag-bg-red"></span>
+                        <span class="flag-bg-blue"></span>
+                        <span class="flag-bg-yellow"></span>
+                        <span class="flag-bg-green"></span>
+                        
+                        <!-- Border and corner decorative layers -->
+                        <span class="flag-border-effect"></span>
+                        <span class="flag-corner-effect"></span>
+                        
+                        <!-- Button Text -->
+                        <span class="content">Order Now</span>
+                      </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section logo-section">
+                <h3 class="footer-logo">
+                    <img src="/IMG/logohh.jpg" alt="Maravann Burgers Logo">
+                </h3>
+                <p class="footer-tagline">Crafting Perfect Burgers Since 2020</p>
             </div>
-            <div class="review-card">
-                <div class="review-stars">
-                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                </div>
-                <blockquote>
-                    "The Mix Platter is perfect for sharing! The chicken wings are crispy on the outside and juicy on the inside. Will definitely be back!"
-                </blockquote>
-                <div class="reviewer">- <span>Michael R.</span></div>
+            <div class="footer-section contact-info">
+                <h4 class="footer-heading">Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Burger Street, NYC</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+11234567890">(123) 456-7890</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:hello@hichlounge.com">hello@hichlounge.com</a></p>
             </div>
-            <div class="review-card">
-                <div class="review-stars">
-                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            <div class="footer-section hours">
+                <h4 class="footer-heading">Opening Hours</h4>
+                <p>Mon-Sun: 6PM - 11PM</p>
+                <p>Holidays: 6PM - 11PM</p>
+            </div>
+            <div class="footer-section social">
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/p/Maravann-Burgers-61550513247414/" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/maravann.burgers/" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@maravann.burgers" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
                 </div>
-                <blockquote>
-                    "The owner is so friendly and welcoming! The food is delicious and the atmosphere is great. A must-visit when you're in Flic en Flac."
-                </blockquote>
-                <div class="reviewer">- <span>David L.</span></div>
             </div>
         </div>
-    </section>
-
-    <section class="cta-order-section">
-        <h2 class="cta-order-title">Ready to Order?</h2>
-        <p class="cta-order-subtitle">Contact us via WhatsApp or visit us in Flic en Flac</p>
-        <div class="cta-order-buttons">
-            <a href="tel:5551234567" class="cta-btn cta-btn-call"><i class="fas fa-phone"></i> Call Now</a>
-            <a href="https://goo.gl/maps/xyz" target="_blank" class="cta-btn cta-btn-directions"><i class="fas fa-map-marker-alt"></i> Get Directions</a>
+        <div class="chat-container">
+            <div class="social-icons-fixed">
+                <a href="https://www.facebook.com/p/Maravann-Burgers-61550513247414/" target="_blank" class="social-icon" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/maravann.burgers/" target="_blank" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@maravann.burgers" target="_blank" class="social-icon" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            <div class="chat-toggle" onclick="toggleChat()">
+                <i class="fa-solid fa-burger"></i>
+                <div class="notice">heyy 😊</div>
+                
+            </div>
+            <div id="order-notice" class="order-notice"></div>
+            <div class="chat-window">
+                <div class="chat-header">
+                    <div class="chat-header-flag">
+                        <div class="flag-stripe-mini red"></div>
+                        <div class="flag-stripe-mini blue"></div>
+                        <div class="flag-stripe-mini yellow"></div>
+                        <div class="flag-stripe-mini green"></div>
+                    </div>
+                    <h3>Hich Lounge</h3>
+                    <button class="close-chat" onclick="toggleChat()">×</button>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <p>Welcome to Hich Lounge! How can we help you today?</p>
+                        <span class="timestamp">Just now</span>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="userInput" placeholder="Type your message...">
+                    <button onclick="handleUserInput()"><i class="fas fa-paper-plane"></i></button>
+                    <div class="button-flag-indicator"></div>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <footer>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+        <div class="footer-bottom">
+            <p>© 2025 Hich Lounge. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </div>
         </div>
-        <p>© 2024 Porky Porky. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="app.js"></script>
 </body>
 </html>
