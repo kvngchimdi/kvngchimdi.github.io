@@ -348,7 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 orderState = 2;
             } else if (orderState === 2) {
                 orderDetails.option = message.toLowerCase().includes('delivery') ? 'Delivery' : 'Pickup';
-                const whatsappNumber = orderDetails.option === 'Delivery' ? '+23059330011' : '+23057110755';
+                const whatsappNumber = orderDetails.option === 'Delivery' ? '+23057110755' : '+23055075552';
                 const orderText = `Hello, I would like to place an order: Burger Type: ${orderDetails.type}, Size: ${orderDetails.size}, Option: ${orderDetails.option}`;
                 const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderText)}`;
                 response = `🎉 Your order is placed!<br>Summary: ${orderDetails.type}, ${orderDetails.size}, ${orderDetails.option}<br><a href="${whatsappLink}" target="_blank" style="color: green;">Finalize on WhatsApp</a>`;
@@ -839,8 +839,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (completeOrderBtn) completeOrderBtn.addEventListener('click', () => {
         const deliveryOption = document.querySelector('input[name="delivery-option"]:checked')?.value || 'delivery';
-        const whatsappNumber = deliveryOption === 'delivery' ? '+23059330011' : '+23057110755';
-        let orderText = `Hello, I would like to place an order:\n\n`;
+        const whatsappNumber = deliveryOption === 'delivery' ? '+23057110755' : '+23055075552';
+        let orderText = `Hello, I would like to place an order from Hich Lounge :\n\n`;
         let total = 0;
         selectedItems.forEach(item => {
             const priceNum = parseInt(item.price.replace(/[^0-9]/g, ''), 10) || 0;
@@ -904,7 +904,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (date && time && partySize && name && contact) {
                     const message = `Reservation: Date: ${date}, Time: ${time}, Party Size: ${partySize}, Name: ${name}, Contact: ${contact}`;
-                    const whatsappLink = `https://wa.me/+23057110755?text=${encodeURIComponent(message)}`;
+                    const whatsappLink = `https://wa.me/+23055075552?text=${encodeURIComponent(message)}`;
                     window.open(whatsappLink, '_blank');
                     modal.classList.remove('active');
                     setTimeout(() => {
