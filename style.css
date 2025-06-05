@@ -200,6 +200,27 @@ body {
   60% { transform: translateY(-15px) translateX(-50%); }
 }
 
+@media (max-width: 768px) {
+  .contact-info {
+    text-align: center; /* Centers inline or flex children */
+  }
+
+  .contact-item {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 2rem; /* Optional: more space between items */
+  }
+
+  .contact-item i {
+    margin-right: 0; /* Remove right margin for stacked layout */
+    margin-bottom: 0.5rem; /* Space between icon and text */
+  }
+
+  .contact-item h3,
+  .contact-item p {
+    text-align: center; /* Ensure text is centered */
+  }
+}
 /* About Section */
 .about {
   padding: 6rem 5%;
@@ -3552,3 +3573,4 @@ body.panel-open {
         display: block;
     }
 }
+
