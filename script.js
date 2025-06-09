@@ -1,4 +1,3 @@
-// Consolidated DOMContentLoaded listener for all initialization
 document.addEventListener('DOMContentLoaded', () => {
     // Core variables
     const video = document.getElementById('hero-video');
@@ -141,7 +140,36 @@ document.addEventListener('DOMContentLoaded', () => {
         sr.reveal('.social-links', { origin: 'right', delay: 800 });
         sr.reveal('.map-container', { origin: 'left', delay: 300 });
         sr.reveal('.contact-info', { origin: 'right', delay: 600 });
-        sr.reveal('.menu-section', { origin: 'bottom', distance: '50px', duration: 1000 });
+        // Updated reveals for menu section elements
+        sr.reveal('.menu-section h2', { 
+            origin: 'top', 
+            distance: '50px', 
+            duration: 1000, 
+            delay: 200, 
+            reset: false 
+        });
+        sr.reveal('.menu-nav', { 
+            origin: 'left', 
+            distance: '50px', 
+            duration: 1000, 
+            delay: 400, 
+            reset: false 
+        });
+        sr.reveal('.menu-section .intro', { 
+            origin: 'right', 
+            distance: '50px', 
+            duration: 1000, 
+            delay: 600, 
+            reset: false 
+        });
+        sr.reveal('.menu-card', { 
+            origin: 'bottom', 
+            distance: '50px', 
+            duration: 1000, 
+            interval: 200,
+            viewFactor: 0.1,
+            reset: false 
+        });
     }
 
     // Review Carousel
@@ -245,12 +273,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Explore More Button
-    const exploreMoreBtn = document.getElementById('explore-more');
+    const exploreMenuBtn = document.getElementById('explore-more');
     const menuSection = document.getElementById('menu');
-    if (exploreMoreBtn && menuSection) {
-        exploreMoreBtn.addEventListener('click', () => {
+    if (exploreMenuBtn && menuSection) {
+        exploreMenuBtn.addEventListener('click', () => {
             menuSection.classList.toggle('expanded');
-            exploreMoreBtn.textContent = menuSection.classList.contains('expanded') ? 'Show Less' : 'Explore More';
+            exploreMenuBtn.textContent = menuSection.classList.contains('expanded') ? 'Show Less' : 'Explore More';
         });
     }
 
@@ -745,7 +773,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let total = 0;
 
         selectedItems.forEach((item, index) => {
-            const priceNum = parseInt(item.price.replace(/[^0-9]/g, ''), 10) || 0;
+            const priceNum = parseInt(item.price.replace(/[^0-9]/g, ''), 10);
             const itemTotal = priceNum * (item.quantity || 1);
             total += itemTotal;
             const orderItem = document.createElement('div');
@@ -787,7 +815,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateOrderSummary();
     });
 
-    if (checkoutOrderBtn) checkoutOrderBtn.addEventListener('click', () => {
+    if (checkboxOrderBtn) checkboxOrderBtn.addEventListener('click', () => {
         if (!selectedItems.length) {
             alert('Your order is empty. Please add items first.');
             return;
@@ -835,13 +863,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (completeOrderBtn) completeOrderBtn.addEventListener('click', () => {
         const deliveryOption = document.querySelector('input[name="delivery-option"]:checked')?.value || 'delivery';
         const whatsappNumber = deliveryOption === 'delivery' ? '+23057110755' : '+23055075552';
-        let orderText = `Hello, I would like to place an order from Hich Lounge :\n\n`;
-        let total = 0;
+        let orderText = `Hello, I would like to place an order from Hichu Lounge:\n\n`;
         selectedItems.forEach(item => {
             const priceNum = parseInt(item.price.replace(/[^0-9]/g, ''), 10) || 0;
             const itemTotal = priceNum * (item.quantity || 1);
             total += itemTotal;
-            orderText += `- ${item.name}${item.customizations ? ` (${item.customizations})` : ''} ${item.quantity > 1 ? `x${item.quantity}` : ''}: ${itemTotal}Rs\n`;
+            orderText += `- ${item.name}${item.customizations ? ` (${item.customizations})` : ''}${item.quantity > 1 ? ` x${item.quantity}` : ''}: ${itemTotal}Rs\n`;
         });
         orderText += `\nTotal: ${total}Rs\nOption: ${deliveryOption === 'delivery' ? 'Delivery' : 'Pickup'}`;
         const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderText)}`;
@@ -874,7 +901,7 @@ document.addEventListener('DOMContentLoaded', () => {
         closeModal.addEventListener('click', () => {
             modal.classList.remove('active');
             setTimeout(() => {
-                modal.style.display = 'none';
+                modal.display = 'none';
             }, 300);
         });
 
@@ -920,14 +947,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Menu Category Filtering
-const menuNavBtns = document.querySelectorAll('.menu-nav-btn');
+const menuNavBtn = document.querySelectorAll('.menu-nav-btn');
 const menuCardsContainer = document.getElementById('menu-cards-container');
 const menuCards = menuCardsContainer.querySelectorAll('.menu-card');
 
-menuNavBtns.forEach(btn => {
+menuNavBtn.forEach(btn => {
     btn.addEventListener('click', () => {
         // Remove active class from all buttons
-        menuNavBtns.forEach(b => b.classList.remove('active'));
+        menuNavBtn.forEach(b => b.classList.remove('active'));
         // Add active class to clicked button
         btn.classList.add('active');
         
