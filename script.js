@@ -140,7 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
         sr.reveal('.social-links', { origin: 'right', delay: 800 });
         sr.reveal('.map-container', { origin: 'left', delay: 300 });
         sr.reveal('.contact-info', { origin: 'right', delay: 600 });
-        // Updated reveals for menu section elements
         sr.reveal('.menu-section h2', { 
             origin: 'top', 
             distance: '50px', 
@@ -273,12 +272,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Explore More Button
-    const exploreMenuBtn = document.getElementById('explore-more');
+    const exploreMoreBtn = document.getElementById('explore-more');
     const menuSection = document.getElementById('menu');
-    if (exploreMenuBtn && menuSection) {
-        exploreMenuBtn.addEventListener('click', () => {
+    if (exploreMoreBtn && menuSection) {
+        exploreMoreBtn.addEventListener('click', () => {
             menuSection.classList.toggle('expanded');
-            exploreMenuBtn.textContent = menuSection.classList.contains('expanded') ? 'Show Less' : 'Explore More';
+            exploreMoreBtn.textContent = menuSection.classList.contains('expanded') ? 'Show Less' : 'Explore More';
         });
     }
 
@@ -773,7 +772,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let total = 0;
 
         selectedItems.forEach((item, index) => {
-            const priceNum = parseInt(item.price.replace(/[^0-9]/g, ''), 10);
+            const priceNum = parseInt(item.price.replace(/[^0-9]/g, ''), 10) || 0;
             const itemTotal = priceNum * (item.quantity || 1);
             total += itemTotal;
             const orderItem = document.createElement('div');
@@ -809,13 +808,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Mobile Cart Count Click to Scroll
+    const cartCount = document.querySelector('.cart-count');
+    const orderSummaryContainer = document.querySelector('.order-summary-container');
+    if (cartCount && orderSummaryContainer && window.innerWidth <= 768) {
+        cartCount.addEventListener('click', (e) => {
+            e.preventDefault();
+            orderSummaryContainer.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+
     if (clearOrderBtn) clearOrderBtn.addEventListener('click', () => {
         selectedItems = [];
         updateCartCount();
         updateOrderSummary();
     });
 
-    if (checkboxOrderBtn) checkboxOrderBtn.addEventListener('click', () => {
+    if (checkoutOrderBtn) checkoutOrderBtn.addEventListener('click', () => {
         if (!selectedItems.length) {
             alert('Your order is empty. Please add items first.');
             return;
@@ -863,12 +872,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (completeOrderBtn) completeOrderBtn.addEventListener('click', () => {
         const deliveryOption = document.querySelector('input[name="delivery-option"]:checked')?.value || 'delivery';
         const whatsappNumber = deliveryOption === 'delivery' ? '+23057110755' : '+23055075552';
-        let orderText = `Hello, I would like to place an order from Hichu Lounge:\n\n`;
+        let orderText = `Hello, I would like to place an order from Hich Lounge:\n\n`;
+        let total = 0;
         selectedItems.forEach(item => {
             const priceNum = parseInt(item.price.replace(/[^0-9]/g, ''), 10) || 0;
             const itemTotal = priceNum * (item.quantity || 1);
             total += itemTotal;
-            orderText += `- ${item.name}${item.customizations ? ` (${item.customizations})` : ''}${item.quantity > 1 ? ` x${item.quantity}` : ''}: ${itemTotal}Rs\n`;
+            orderText += `- ${item.name}${item.customizations ? ` (${item.customizations})` : ''} ${item.quantity > 1 ? `x${item.quantity}` : ''}: ${itemTotal}Rs\n`;
         });
         orderText += `\nTotal: ${total}Rs\nOption: ${deliveryOption === 'delivery' ? 'Delivery' : 'Pickup'}`;
         const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderText)}`;
@@ -901,7 +911,7 @@ document.addEventListener('DOMContentLoaded', () => {
         closeModal.addEventListener('click', () => {
             modal.classList.remove('active');
             setTimeout(() => {
-                modal.display = 'none';
+                modal.style.display = 'none';
             }, 300);
         });
 
@@ -947,14 +957,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Menu Category Filtering
-const menuNavBtn = document.querySelectorAll('.menu-nav-btn');
+const menuNavBtns = document.querySelectorAll('.menu-nav-btn');
 const menuCardsContainer = document.getElementById('menu-cards-container');
 const menuCards = menuCardsContainer.querySelectorAll('.menu-card');
 
-menuNavBtn.forEach(btn => {
+menuNavBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         // Remove active class from all buttons
-        menuNavBtn.forEach(b => b.classList.remove('active'));
+        menuNavBtns.forEach(b => b.classList.remove('active'));
         // Add active class to clicked button
         btn.classList.add('active');
         
