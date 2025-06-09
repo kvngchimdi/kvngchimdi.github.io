@@ -27,12 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Eggs', price: 30 },
         { name: 'Caramelized Onions', price: 25 },
         { name: 'Cheese', price: 30 },
-        { name: 'Pima Kari (Chillies)', price: 35 },
-        { name: 'Caramelized Pineapple', price: 40 },
-        { name: 'Truffle Mayo', price: 40 },
-        { name: 'Sweet Cherkins', price: 40 },
         { name: 'Extra 150g Beef', price: 140 },
-        { name: 'Extra Chicken', price: 110 },
         { name: 'Salad', price: 70 }
     ];
 
@@ -922,4 +917,29 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeMenuInteraction();
     updateOrderSummary();
     updateCartCount();
+});
+
+// Menu Category Filtering
+const menuNavBtns = document.querySelectorAll('.menu-nav-btn');
+const menuCardsContainer = document.getElementById('menu-cards-container');
+const menuCards = menuCardsContainer.querySelectorAll('.menu-card');
+
+menuNavBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Remove active class from all buttons
+        menuNavBtns.forEach(b => b.classList.remove('active'));
+        // Add active class to clicked button
+        btn.classList.add('active');
+        
+        const category = btn.dataset.category;
+        
+        // Filter cards
+        menuCards.forEach(card => {
+            if (category === 'all' || card.dataset.category === category) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
 });
