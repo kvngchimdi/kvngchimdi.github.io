@@ -89,17 +89,19 @@
     <br>
 
     <!-- About Section -->
+   <!-- About Section -->
     <section class="about" id="about">
         <h2 class="about-heading">About Us</h2>
         <div class="about-content">
             <div class="about-text">
                 <div class="story-section">
                     <h3>Our Story</h3>
-                    <p>Founded in 2020, Maravann Burgers started as a small food truck passionate about crafting perfect burgers. Our secret recipes and premium ingredients quickly made us a local favorite. Today, we continue to serve mouthwatering burgers with the same love and dedication.</p>
+                    <p>Our Story
+Founded in 2023 in the heart of Flic en Flac, Mauritius, Hich Lounge began with a vision to create a vibrant dining experience celebrating bold flavors. From our signature burgers and sizzling kebabs to artisanal pizzas and exotic dishes, we use premium ingredients and time-honored recipes to craft every plate with passion. Today, Hich Lounge remains a beloved local gem, inviting guests to savor unforgettable meals in a warm, lively atmosphere</p>
                 </div>
                 <div class="journey-section">
                     <h3>The Owner's Journey</h3>
-                    <p>The owner's dream begins with to create unforgettable burger experiences. Starting from humble beginnings, he has poured his heart into mastering the art of burger crafting, transforming his restaurant into a beloved location in the heart of Mauritius.</p>
+                    <p>Welcome to our family restaurant, where we invite you on a delicious journey to the world of Iranian flavors. Since June 2023, we proudly bring a variety of Iranian cuisines to Mauritius, a country in South Africa. From kebabs and flavorful stews to delightful local dishes, at our restaurant, you can enjoy a diverse and unforgettable taste of Iran. Join us and experience a culinary journey filled with Iranian gastronomy</p>
                 </div>
             </div>
             <div class="owner-image-container">
@@ -116,193 +118,122 @@
 
     <!-- Menu Section -->
     <!-- Replace your current menu section with this implementation -->
+<!-- Menu Section -->
 <section class="menu-section" id="menu">
-    <h2>Order Our Top Burgers</h2>
-    <p class="intro">Click On Our Burgers To Order Now</p>
+    <h2>Order Our Top Dishies</h2>
+    <div class="menu-nav">
+        <button class="menu-nav-btn active" data-category="all">All</button>
+        <button class="menu-nav-btn" data-category="burgers">Burgers</button>
+        <button class="menu-nav-btn" data-category="kebabs">Kebabs</button>
+        <button class="menu-nav-btn" data-category="pizzas">Pizzas</button>
+        <button class="menu-nav-btn" data-category="others">Others</button>
+    </div>
+    <p class="intro">Click On Our Dishies To Eat Now</p>
     <div class="cards-container" id="menu-cards-container">
-        <!-- Menu cards with proper data attributes for ingredients -->
-        <div class="menu-card" data-id="1" data-ingredients="beef patty, sesame bun, melted cheese, caramelized onions, pima kari, chili Thai">
+        <!-- Menu cards with proper data attributes for categories -->
+        <div class="menu-card" data-id="1" data-category="others" data-ingredients="Chicken, peanut, Pomegranate Sauce, Rice">
             <div class="card-content">
                 <img src="def.PNG" alt="Pima Kari Burger" />
                 <h3>FESENJOON</h3>
-                <p class="description">Savor our exquisite Fesenjoon, a Persian masterpiece featuring tender chicken simmered in a rich, velvety peanut and pomegranate sauce. This sweet-tangy delight, bursting with nutty warmth and vibrant flavor, is served over fluffy rice for a truly unforgettable meal.</p>
-                <p class="price">350Rs</p>
-                <button class="customize-btn">Customize</button>
-            </div>
-            
-            <!-- Customization Panel (initially hidden) -->
-            <div class="customization-panel">
-                <div class="panel-header">
-                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
-                    <h3>Customize Your Burger</h3>
-                    <button class="close-panel"><i class="fas fa-times"></i></button>
-                </div>
-                <div class="panel-content">
-                    <div class="ingredients-section">
-                        <p class="customize-instructions">Click on an ingredient to remove it</p>
-                        <div class="ingredients-list"></div>
-                    </div>
-                    <!-- New Add-Ons Section -->
-                    <div class="add-ons-section">
-                        <h4>Add-Ons</h4>
-                        <div class="add-ons-list"></div>
-                    </div>
-                    <div class="cooking-level-section" style="display: none;">
-                        <h4>Cooking Level</h4>
-                        <div class="cooking-level-options"></div>
-                    </div>
-                    <div class="quantity-section">
-                        <h4>Quantity</h4>
-                        <div class="quantity-controls">
-                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
-                            <span class="quantity-value">1</span>
-                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
-                        </div>
-                    </div>
-                    <button class="add-to-cart-btn">Add to Order</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="menu-card" data-id="2" data-ingredients="beef patty, brioche bun, truffle sauce, salad, caramelized pineapple, sun dried tomato, blueberry & raspberry brochette">
-            <div class="card-content">
-                <img src="gg.PNG" alt="La Belle Demoiselle Burger" />
-                <h3>PPANCAKES </h3>
-                <p class="description">Her sight will mesmerise you and her taste will be dancing on your tastebuds. Each bite is a perfect blend of melt-in-your-mouth goodness, drizzled with sweet maple syrup and topped with your favorite fruits or creamy butter. Treat yourself to a stack of pure comfort—your taste buds will thank you!</p>
-                <p class="price">300Rs</p>
-                <button class="customize-btn">Customize</button>
-            </div>
-            <!-- Customization Panel (initially hidden) -->
-            <div class="customization-panel">
-                <div class="panel-header">
-                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
-                    <h3>Customize Your Burger</h3>
-                    <button class="close-panel"><i class="fas fa-times"></i></button>
-                </div>
-                <div class="panel-content">
-                    <div class="ingredients-section">
-                        <p class="customize-instructions">Click on an ingredient to remove it</p>
-                        <div class="ingredients-list"></div>
-                    </div>
-                    <div class="cooking-level-section" >
-                        <h4>Cooking Level</h4>
-                        <div class="cooking-level-options"></div>
-                    </div>
-                    <!-- New Add-Ons Section -->
-                    <div class="add-ons-section">
-                        <h4>Add-Ons</h4>
-                        <div class="add-ons-list"></div>
-                    </div>
-
-                    <div class="quantity-section">
-                        <h4>Quantity</h4>
-                        <div class="quantity-controls">
-                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
-                            <span class="quantity-value">1</span>
-                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
-                        </div>
-                    </div>
-                    <button class="add-to-cart-btn">Add to Order</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="menu-card" data-id="3" data-ingredients="plant-based patty, whole grain bun, beetroot, almonds, avocado spread, fresh sprouts, vegan mayo">
-            <div class="card-content">
-            <img src="luckkk.png" alt="Unconventional Vegan Burger" />
-            <h3>ZERESHK POLO</h3>A unique blend of flavors in your Delight, even 
-            <p class="description">A unique blend of flavors in your Delight,  Chicken with rice and barberries
-FR: Poulet au riz et aux barberries
-</p>
-            <p class="price">470Rs</p>
-            <button class="customize-btn">Customize</button>
-            </div>
-            
-            <!-- Customization Panel (initially hidden) -->
-            <div class="customization-panel">
-                <div class="panel-header">
-                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
-                    <h3>Customize Your Burger</h3>
-                    <button class="close-panel"><i class="fas fa-times"></i></button>
-                </div>
-                <div class="panel-content">
-                    <div class="ingredients-section">
-                        <p class="customize-instructions">Click on an ingredient to remove it</p>
-                        <div class="ingredients-list"></div>
-                    </div>
-                    <!-- New Add-Ons Section -->
-                    <div class="add-ons-section">
-                        <h4>Add-Ons</h4>
-                        <div class="add-ons-list"></div>
-                    </div>
-                    <div class="quantity-section">
-                        <h4>Quantity</h4>
-                        <div class="quantity-controls">
-                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
-                            <span class="quantity-value">1</span>
-                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
-                        </div>
-                    </div>
-                    <button class="add-to-cart-btn">Add to Order</button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Additional menu items (hidden initially) -->
-         
-        <div class="menu-card additional-item" data-id="4" data-ingredients="double beef patty, charcoal bun, red cheddar, crispy bacon, jalapeños, spicy heart sauce">
-            <div class="card-content">
-                <img src="weee.PNG" alt="The Broken Heart Burger" />
-                <h3>Hummus & LAVASH</h3>
-                <p class="description">Love gone wrong never tasted so right. A juicy patty dressed to impress with a symphony of
-                    flavors that'll have your tastebuds doing the tango. Served with a side of crispy fries, this burger might break
-                    your heart... but in a good way.</p>
-                <p class="price">410Rs</p>
-                <button class="customize-btn">Customize</button>
-            </div>
-            
-            <!-- Customization Panel (initially hidden) -->
-            <div class="customization-panel">
-                <div class="panel-header">
-                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
-                    <h3>Customize Your Burger</h3>
-                    <button class="close-panel"><i class="fas fa-times"></i></button>
-                </div>
-                <div class="panel-content">
-                    <div class="ingredients-section">
-                        <p class="customize-instructions">Click on an ingredient to remove it</p>
-                        <div class="ingredients-list"></div>
-                    </div>
-                    <!-- New Add-Ons Section -->
-                    <div class="add-ons-section">
-                        <h4>Add-Ons</h4>
-                        <div class="add-ons-list"></div>
-                    </div>
-                    <div class="quantity-section">
-                        <h4>Quantity</h4>
-                        <div class="quantity-controls">
-                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
-                            <span class="quantity-value">1</span>
-                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
-                        </div>
-                    </div>
-                    <button class="add-to-cart-btn">Add to Order</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="menu-card additional-item" data-id="5" data-ingredients="double beef patty, brioche bun, double cheese, honey caramelized onions, fried egg, crisp lettuce, special sauce">
-            <div class="card-content">
-                <img src="tryy.png" alt="Pieter Both Burger" />
-                <h3>CHENGEH KEBAB</h3>
-                <p class="description">This one is for the big eaters,a marinated lamb sirloin, comes with rice
-FR: filet d'agneau mariné, accompagné de riz
-leave you breathless when you're done!</p>
+                <p class="description">Savor our exquisite Fesenjoon, a Persian masterpiece featuring tender chicken simmered in a rich, velvety peanut and pomegranate sauce.</p>
                 <p class="price">550Rs</p>
                 <button class="customize-btn">Customize</button>
             </div>
-            
-            <!-- Customization Panel (initially hidden) -->
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Dish</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="2" data-category="others" data-ingredients="fresh fruit, syrup">
+            <div class="card-content">
+                <img src="gg.PNG" alt="La Belle Demoiselle Burger" />
+                <h3>PANCAKES</h3>
+                <p class="description">Pancake with fresh fruit and syrup. Treat yourself to a stack of pure comfort—your taste buds will thank you!</p>
+                <p class="price">400Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Pancake</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="3" data-category="others" data-ingredients="">
+            <div class="card-content">
+                <img src="luckkk.png" alt="Unconventional Vegan Burger" />
+                <h3>ZERESHK POLO</h3>
+                <p class="description">A unique blend of flavors in your Delight, Chicken with rice and barberries</p>
+                <p class="price">490Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Dish</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="4" data-category="burgers" data-ingredients="plant-based patty, 150 gr beef, lettuce, tomato, cheddar">
+            <div class="card-content">
+                <img src="bruegs.jpg" alt="The Broken Heart Burger" />
+                <h3>Juicy Burger</h3>
+                <p class="description">150 gr beef, lettuce, tomato, cheddar for your yummy tummy</p>
+                <p class="price">530Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
             <div class="customization-panel">
                 <div class="panel-header">
                     <button class="back-button"><i class="fas fa-arrow-left"></i></button>
@@ -314,7 +245,6 @@ leave you breathless when you're done!</p>
                         <p class="customize-instructions">Click on an ingredient to remove it</p>
                         <div class="ingredients-list"></div>
                     </div>
-                    <!-- New Add-Ons Section -->
                     <div class="add-ons-section">
                         <h4>Add-Ons</h4>
                         <div class="add-ons-list"></div>
@@ -331,19 +261,15 @@ leave you breathless when you're done!</p>
                 </div>
             </div>
         </div>
-        
-        <div class="menu-card additional-item" data-id="6" data-ingredients="double beef patty, triple-layer bun, american cheese, iceberg lettuce, dill pickles, diced onions, special sauce">
-            <div class="card-content">       
-            <img src="oizza.jpg" alt="Double Decker Burger" />
-            <h3>PEPPERONI</h3>
-            <p class="description">Made with tomato sauce, mozzarella, pepperoni, oregano
-FR: tomate, mozzarella, pepperoni, origan
-</p>
-            <p class="price">400Rs</p>
-            <button class="customize-btn">Customize</button>
+
+        <div class="menu-card" data-id="5" data-category="burgers" data-ingredients="plant-based patty, Coated chicken breast, tomato, pickles, lettuce">
+            <div class="card-content">
+                <img src="burger.jpg" alt="Supreme Burger" />
+                <h3>Supreme Burger</h3>
+                <p class="description">A unique blend of Coated chicken breast, tomato, pickles, lettuce</p>
+                <p class="price">510Rs</p>
+                <button class="customize-btn">Customize</button>
             </div>
-            
-            <!-- Customization Panel (initially hidden) -->
             <div class="customization-panel">
                 <div class="panel-header">
                     <button class="back-button"><i class="fas fa-arrow-left"></i></button>
@@ -355,10 +281,585 @@ FR: tomate, mozzarella, pepperoni, origan
                         <p class="customize-instructions">Click on an ingredient to remove it</p>
                         <div class="ingredients-list"></div>
                     </div>
-                    <!-- New Add-Ons Section -->
                     <div class="add-ons-section">
                         <h4>Add-Ons</h4>
                         <div class="add-ons-list"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="6" data-category="burgers" data-ingredients="plant-based patty, Burger made with chickpeas, pickles, tomato, lettuce">
+            <div class="card-content">
+                <img src="FelafelBurger.jpg" alt="Felafel Burger" />
+                <h3>Felafel Burger</h3>
+                <p class="description">A unique blend of Burger made with chickpeas, pickles, tomato, lettuce</p>
+                <p class="price">450Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Burger</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <div class="add-ons-section">
+                        <h4>Add-Ons</h4>
+                        <div class="add-ons-list"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="7" data-category="others" data-ingredients="">
+            <div class="card-content">
+                <img src="Bolognese.jpg" alt="Bolognese" />
+                <h3>Bolognese</h3>
+                <p class="description">A unique blend Minced beef in tomato sauce and herbs</p>
+                <p class="price">470Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Dish</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click the button to increase your order</p>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="8" data-category="others" data-ingredients="">
+            <div class="card-content">
+                <img src="Arrabiata.jfif" alt="Arrabiata" />
+                <h3>Arrabiata (Arrabbiata)</h3>
+                <p class="description">Tomato sauce (hot)</p>
+                <p class="price">470Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Dish</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section"></div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="9" data-category="others" data-ingredients="plant-based patty, whole grain bun, beetroot, almonds, avocado spread, fresh sprouts, vegan mayo">
+            <div class="card-content">
+                <img src="ChickenAlfredo.jpg" alt="Chicken Alfredo" />
+                <h3>Chicken Alfredo</h3>
+                <p class="description">Cream, chicken, mushroom</p>
+                <p class="price">480Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Dish</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="10" data-category="kebabs" data-ingredients="rRice, salad">
+            <div class="card-content">
+                <img src="Shishlik.jfif" alt="Shishlik" />
+                <h3>Shishlik</h3>
+                <p class="description">300g of BBQ lamb rib with rice & salad</p>
+                <p class="price">900Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Shishlik</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="11" data-category="kebabs" data-ingredients="Lamb minced meat, Beef Minced Meat, Rice Bowl, Salad">
+            <div class="card-content">
+                <img src="KubidehKebab.jpg" alt="Kubideh Kebab" />
+                <h3>Kubideh Kebab</h3>
+                <p class="description">Mix of lamb & beef minced meat with rice & salad</p>
+                <p class="price">680Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Kubideh Kebab</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <div class="add-ons-section">
+                        <h4>Add-Ons</h4>
+                        <div class="add-ons-list"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="12" data-category="kebabs" data-ingredients="Flavored Chicken breast, Garnished with rice, Garnished with salad">
+            <div class="card-content">
+                <img src="ChickenKebab.jpg" alt="Zaffran Chicken Kebab" />
+                <h3>Zaffran Chicken Kebab</h3>
+                <p class="description">A unique blend of flavored Chicken breast, garnished with rice & salad</p>
+                <p class="price">550Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Zaffran Chicken Kebab</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <div class="add-ons-section">
+                        <h4>Add-Ons</h4>
+                        <div class="add-ons-list"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="13" data-category="others" data-ingredients="">
+            <div class="card-content">
+                <img src="wings.jfif" alt="Zaffran Wings" />
+                <h3>Zaffran Wings</h3>
+                <p class="description">6 pieces of BBQ Zaffran wings, rice & sides</p>
+                <p class="price">470Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Dish</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section"></div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="14" data-category="kebabs" data-ingredients="Mix of Kubideh Kebab, Chengeh Kebab, Shishlik Kebab, Zaffran Chicken Kebab, Kebab with Rice, Side">
+            <div class="card-content">
+                <img src="Kebab.jfif" alt="Kebab Platter" />
+                <h3>Kebab Platter</h3>
+                <p class="description">Mix of Kubideh Kebab, Chengeh Kebab, Shishlik Kebab, Zaffran Chicken Kebab, Kebab with Rice & Side</p>
+                <p class="price">2700Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Kebab Platter</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="15" data-category="others" data-ingredients="double beef patty, brioche bun, double cheese, honey caramelized onions, fried egg, crisp lettuce, special sauce">
+            <div class="card-content">
+                <img src="polo.jfif" alt="Zereshk Polo" />
+                <h3>Zereshk Polo</h3>
+                <p class="description">This one is for the big eaters, Chicken with rice and barberries</p>
+                <p class="price">490Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Dish</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="16" data-category="others" data-ingredients="tomato sauce, mozzarella, pepperoni, oregano">
+            <div class="card-content">
+                <img src="MeygooPolo.jpg" alt="Meygoo Polo" />
+                <h3>Meygoo Polo</h3>
+                <p class="description">Made with Mixed rice with shrimp & spices</p>
+                <p class="price">580Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Dish</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="17" data-category="pizzas" data-ingredients="Cream, mozzarella, chicken, mushroom, oregano, olives">
+            <div class="card-content">
+                <img src="oizzadd.jpg" alt="Stanbuli" />
+                <h3>Stanbuli</h3>
+                <p class="description">Made with Cream, mozzarella, chicken, mushroom, oregano, olives</p>
+                <p class="price">450Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Pizza</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                        <div class="ingredients-list"></div>
+                    </div>
+                    <div class="add-ons-section">
+                        <h4>Add-Ons</h4>
+                        <div class="add-ons-list"></div>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="18" data-category="others" data-ingredients="tomato sauce, mozzarella, pepperoni, oregano">
+            <div class="card-content">
+                <img src="MeygooPolo.jpg" alt="Meygoo Polo" />
+                <h3>Meygoo Polo</h3>
+                <p class="description">Made with Mixed rice with shrimp & spices</p>
+                <p class="price">580Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Dish</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Click on an ingredient to remove it</p>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="19" data-category="pizzas" data-ingredients="Tomate, mozzarella, basilic">
+            <div class="card-content">
+                <img src="MARGARITIA.jfif" alt="MARGARITIA" />
+                <h3>MARGARITIA</h3>
+                <p class="description">Tomate, mozzarella, basilic</p>
+                <p class="price">450Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Pizza</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Margarita Pizza (30 cm)</p>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="20" data-category="pizzas" data-ingredients="Cream, mozzarella, chicken, mushroom, oregano, olives">
+            <div class="card-content">
+                <img src="whitepizza.jpg" alt="WHITE QUEEN" />
+                <h3>WHITE QUEEN</h3>
+                <p class="description">Made with Cream, mozzarella, chicken, mushroom, oregano, olives</p>
+                <p class="price">450Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Pizza</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Margarita Pizza (30 cm)</p>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="21" data-category="pizzas" data-ingredients="Cream, onion, mozzarella, shrimp, mussels, octopus, oregano, olives">
+            <div class="card-content">
+                <img src="seafood.jpg" alt="SEAFOOD" />
+                <h3>SEAFOOD</h3>
+                <p class="description">Made with Cream, onion, mozzarella, shrimp, mussels, octopus, oregano, olives</p>
+                <p class="price">580Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Pizza</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Pizza Size (30 cm)</p>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="22" data-category="pizzas" data-ingredients="Tomato sauce, mozzarella, marinated BBQ chicken, oregano, olives">
+            <div class="card-content">
+                <img src="chickenbbq.jfif" alt="CHICKEN BBQ" />
+                <h3>CHICKEN BBQ</h3>
+                <p class="description">Made with Tomato sauce, mozzarella, marinated BBQ chicken, oregano, olives</p>
+                <p class="price">520Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Pizza</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Pizza Size (30 cm)</p>
+                    </div>
+                    <div class="quantity-section">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="quantity-decrease"><i class="fas fa-minus"></i></button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-increase"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card" data-id="23" data-category="pizzas" data-ingredients="Tomato sauce, mozzarella, pepperoni, oregano">
+            <div class="card-content">
+                <img src="oizza.jpg" alt="PEPPERONI" />
+                <h3>PEPPERONI</h3>
+                <p class="description">Made with Tomato sauce, mozzarella, pepperoni, oregano</p>
+                <p class="price">520Rs</p>
+                <button class="customize-btn">Customize</button>
+            </div>
+            <div class="customization-panel">
+                <div class="panel-header">
+                    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+                    <h3>Customize Your Pizza</h3>
+                    <button class="close-panel"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-content">
+                    <div class="ingredients-section">
+                        <p class="customize-instructions">Pizza Size (30 cm)</p>
                     </div>
                     <div class="quantity-section">
                         <h4>Quantity</h4>
@@ -373,14 +874,14 @@ FR: tomate, mozzarella, pepperoni, origan
             </div>
         </div>
     </div>
-    
-    <!-- Order notification toast -->
     <div id="order-notification" class="order-notification">
         Item added to your order!
     </div>
-    
     <button class="cta" id="explore-more">Explore More</button>
 </section>
+    
+   
+  
         
         
     </section>
@@ -501,6 +1002,9 @@ FR: tomate, mozzarella, pepperoni, origan
                 </div>
             </div>
         </div>
+         <div class="map-button-container">
+        <a href="https://www.google.com/maps/search/?api=1&query=Hich+Lounge,Flic+en+Flac,Mauritius" target="_blank" rel="noopener" class="map-button" aria-label="Get directions to Hich Lounge on Google Maps">Get to Location</a>
+    </div>
     </section>
 
     <section class="reviews-section" id="reviews">
@@ -557,7 +1061,7 @@ Great warm & friendly service."</p>
             <span class="dot"></span>
             <span class="dot"></span>
         </div>
-        <a href="https://www.google.com/search?sca_esv=f9f1a50abb3c6f24&rlz=1C1ONGR_enMU1088MU1088&sxsrf=AHTn8zqDPQLmv3iAOOKL_NR8w2ylbIUQbA:1744744153378&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzePVp-RgIPpm3-w_9TgR-o31WdP5XGaA4jqIOVvzjHJnaSZWXkLfpKF-cH7GA2fBSELJPx6Qf_D_404c99_AYKx2fNQzGi_QIBn8OrbksruKQtfuow%3D%3D&q=Maravann%27+Burgers+Reviews&sa=X&ved=2ahUKEwi-r_G73tqMAxVKA9sEHeBEFJcQ0bkNegQISxAD&biw=1600&bih=739&dpr=1#" class="write-review-btn"><span class="flag-border-effect"></span>
+        <a href="https://www.google.com/search?sca_esv=3865a5c24f38e491&rlz=1C1ONGR_enMU1088MU1088&nfpr=1&biw=1280&bih=591&sxsrf=AE3TifOrjNMvQQweDDdaBwITSOI5NkCU8Q:1749460954273&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E-DnBnDnRMz6xskSCdMTkVP8g4tXH3SWd6O6IOJ1aM4ESacp-h-t4Xd6At4QPtV1ihT_Cc1e9PIihIQmdPpKo37pwDNR&q=Hich+lounge+Reviews&sa=X&ved=2ahUKEwigkun1geSNAxVLKvsDHQ3ZDGgQ0bkNegQIKBAD" class="write-review-btn"><span class="flag-border-effect"></span>
             <span class="flag-bg-red"></span>
             Write a Review</a>
     </section>
@@ -629,6 +1133,8 @@ Great warm & friendly service."</p>
         </div>
     </div>
 
+    
+
    
 
     <!-- Footer -->
@@ -663,10 +1169,10 @@ Great warm & friendly service."</p>
         </div>
         <div class="chat-container">
             <div class="social-icons-fixed">
-                <a href="https://www.facebook.com/p/Maravann-Burgers-61550513247414/" target="_blank" class="social-icon" aria-label="Facebook">
+                <a href="https://www.facebook.com/HichLounge/" target="_blank" class="social-icon" aria-label="Facebook">
                     <i class="fab fa-facebook"></i>
                 </a>
-                <a href="https://www.facebook.com/HichLounge/" target="_blank" class="social-icon" aria-label="Instagram">
+                <a href="https://www.instagram.com/hichlounge/?hl=en" target="_blank" class="social-icon" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
                 <a href="https://www.tiktok.com/@hich.lounge" target="_blank" class="social-icon" aria-label="TikTok">
@@ -711,6 +1217,6 @@ Great warm & friendly service."</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script,js"></script>
 </body>
 </html>
